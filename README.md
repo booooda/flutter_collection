@@ -1,16 +1,11 @@
 # flutter_collection
 
-A new Flutter project.
+This project is a flutter collection that have flutter challanges , complex ui and advanced animation with flutter
+it will updated always, So follow it to get any new updates .
 
-## Getting Started
+## Auto Scroll List 
 
-This project is a starting point for a Flutter application.
+https://user-images.githubusercontent.com/50383579/209804236-0a5ad6ff-4392-401c-9b91-a1b85ccc03b6.mp4
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
