@@ -1,7 +1,7 @@
 # flutter_collection
 
 This project is a flutter collection that have flutter challanges , complex ui and advanced animation with flutter
-it will updated always so follow it to get updates
+it will updated always, So follow it to get any new updates .
 
 ## Auto Scroll List 
 
