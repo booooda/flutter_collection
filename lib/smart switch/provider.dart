@@ -4,7 +4,7 @@ import 'enums.dart';
 import 'globals.dart';
 
 class HomeModel extends ChangeNotifier {
-  List<double> _sliderValues = [1.0, 1.0, 1.0];
+  final List<double> _sliderValues = [1.0, 1.0, 1.0];
   List get sliderValues => _sliderValues;
   void setSliderValue(index, value) {
     setState(ViewState.Busy);
@@ -20,7 +20,7 @@ class HomeModel extends ChangeNotifier {
   double getStartWidth(width) =>
       width - Global.sidePadding * 4 - Global.boxWidth;
 
-  List<double> _widthValues = [0, 0, 0];
+  final List<double> _widthValues = [0, 0, 0];
   get widthValues => _widthValues;
   void setWidth(index, width) {
     if (switchValues[index]) {
@@ -38,7 +38,7 @@ class HomeModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  List<bool> _switchValues = [true, true, true];
+  final List<bool> _switchValues = [true, true, true];
   List get switchValues => _switchValues;
   void setSwitchValues(index, value) {
     setState(ViewState.Idle);

@@ -46,7 +46,7 @@ class SliderContainerWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color:
                   model.switchValues[index] ? Global.darkBlue : Global.darkGrey,
-              borderRadius: BorderRadius.only(
+              borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(40.0),
                 topRight: Radius.circular(40.0),
                 bottomRight: Radius.circular(40.0),
@@ -61,7 +61,7 @@ class SliderContainerWidget extends StatelessWidget {
       return IgnorePointer(
         ignoring: model.switchValues[index] ? false : true,
         child: SliderTheme(
-          data: SliderThemeData(
+          data: const SliderThemeData(
             trackHeight: Global.trackHeight,
             overlayShape: RoundSliderOverlayShape(overlayRadius: 0.0),
           ),
@@ -85,7 +85,7 @@ class SliderContainerWidget extends StatelessWidget {
       return Container(
         width: Global.boxWidth,
         height: Global.boxHeight,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(20.0),
             bottomRight: Radius.circular(20.0),
@@ -110,7 +110,7 @@ class SliderContainerWidget extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: <Widget>[
-            Container(
+            SizedBox(
               height: 100,
               child: ContentWidget(
                 color: Global.darkBlue,
@@ -121,12 +121,12 @@ class SliderContainerWidget extends StatelessWidget {
               clipper: RectangleClipper(
                 offset: model.getFormula(index, width),
               ),
-              child: Container(
+              child: SizedBox(
                 height: 100,
                 child: AnimatedOpacity(
                   curve: Curves.easeInOutQuart,
                   opacity: model.switchValues[index] ? 1.0 : 0.0,
-                  duration: Duration(milliseconds: 500),
+                  duration: const Duration(milliseconds: 500),
                   child: ContentWidget(
                     color: Global.mediumBlue,
                     index: index,
@@ -145,7 +145,7 @@ class SliderContainerWidget extends StatelessWidget {
         Container(
           width: width - Global.sidePadding,
           height: Global.boxHeight,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Global.darkGrey,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(40.0),

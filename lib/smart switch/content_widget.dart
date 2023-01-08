@@ -8,7 +8,7 @@ import 'home_model.dart';
 class ContentWidget extends StatelessWidget {
   final int index;
   final Color color;
-  ContentWidget({required this.index, required this.color});
+  const ContentWidget({super.key, required this.index, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class ContentWidget extends StatelessWidget {
                 model.switchValues[index]
                     ? '${(model.sliderValues[index] * 100).round()}%'
                     : 'Off',
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                   fontSize: 14.0,
                   fontFamily: 'Sf',
@@ -45,7 +45,7 @@ class ContentWidget extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 10.0,
         ),
         Column(
@@ -54,7 +54,7 @@ class ContentWidget extends StatelessWidget {
           children: <Widget>[
             Text(
               homeData.location,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.black,
                 fontSize: 16.0,
                 fontWeight: FontWeight.w900,

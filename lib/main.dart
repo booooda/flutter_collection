@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
+import 'package:flutter_collection/home.dart';
 import 'package:flutter_collection/smart%20switch/provider.dart';
-import 'package:flutter_collection/smart%20switch/smart_switch.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -24,7 +23,8 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          fontFamily: 'Ageo',
         ),
-        home: SmartSwitch());
+        home: const Home());
   }
 }

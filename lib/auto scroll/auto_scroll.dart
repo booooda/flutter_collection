@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/auto%20scroll/data.dart';
 
-import 'movies_listView.dart';
+import 'movies_list_view.dart';
 
 // ignore: use_key_in_widget_constructors
 class AutoScroll extends StatefulWidget {
@@ -50,43 +50,60 @@ class _AutoScrollState extends State<AutoScroll> {
     return SafeArea(
       child: Scaffold(
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            IconButton(
+                alignment: Alignment.topLeft,
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: const Icon(Icons.arrow_back)),
             Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                MoviesListView(
-                    scrollController: _scrollController1, images: movies1),
-                MoviesListView(
-                    scrollController: _scrollController2, images: movies2),
-                MoviesListView(
-                    scrollController: _scrollController3, images: movies3),
+                Column(
+                  children: [
+                    MoviesListView(
+                        scrollController: _scrollController1, images: movies1),
+                    MoviesListView(
+                        scrollController: _scrollController2, images: movies2),
+                    MoviesListView(
+                        scrollController: _scrollController3, images: movies3),
+                  ],
+                ),
+                const SizedBox(
+                  height: 31,
+                ),
+                const Text(
+                  'Comming Soon !',
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                Material(
+                  elevation: 0,
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(20),
+                  child: MaterialButton(
+                      minWidth: 240,
+                      height: 60,
+                      padding: const EdgeInsets.all(10),
+                      onPressed: () {},
+                      child: const Text(
+                        'Continue',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )),
+                )
               ],
             ),
-            const Text(
-              'Comming Soon !',
-              style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-            Material(
-              elevation: 0,
-              color: Colors.blue,
-              borderRadius: BorderRadius.circular(20),
-              child: MaterialButton(
-                  minWidth: 240,
-                  height: 60,
-                  padding: EdgeInsets.all(10),
-                  onPressed: () {},
-                  child: const Text(
-                    'Continue',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  )),
-            )
           ],
         ),
       ),

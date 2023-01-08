@@ -5,7 +5,7 @@ class HomeData {
   String power;
   IconData icon;
   HomeData.fromMap(data)
-      : this.location = data['location'],
-        this.power = data['power'],
-        this.icon = data['icon'];
+      : location = data['location'],
+        power = data['power'],
+        icon = data['icon'];
 }

@@ -8,7 +8,7 @@ class MoviesListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 120,
       child: ListView.builder(
           controller: scrollController,
@@ -17,7 +17,7 @@ class MoviesListView extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           itemBuilder: ((context, index) {
             return Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(25)),
               child: ClipRRect(
