@@ -3,12 +3,29 @@ import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
+import 'package:flutter_collection/smile/smile.dart';
+
+import 'login_animation/login.dart';
 
 Color dark = const Color.fromARGB(255, 29, 37, 46);
 const Color grey = Color.fromARGB(255, 56, 59, 62);
 Color navy = const Color(0xff302d3e);
 
+double width(BuildContext context) {
+  return MediaQuery.of(context).size.width;
+}
+
+double height(BuildContext context) {
+  return MediaQuery.of(context).size.height;
+}
+
 List<Map<String, dynamic>> cardData = [
+  {
+    'img': 'assets/img/Main/character.png',
+    'title': 'Login Animation',
+    'color': const Color(0xff8C336B),
+    'details': const Login()
+  },
   {
     'img': 'assets/img/Main/autoScroll.png',
     'title': 'Auto List Scroll',
@@ -32,6 +49,12 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Day Mode',
     'color': const Color.fromARGB(255, 204, 81, 226),
     'details': const DayMode()
+  },
+  {
+    'img': 'assets/img/Main/emoji.png',
+    'title': 'Emoji Rate',
+    'color': const Color.fromARGB(255, 244, 221, 132),
+    'details': const Smile()
   },
 ];
 

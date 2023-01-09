@@ -40,7 +40,8 @@ dependencies:
   widget_and_text_animator: ^1.0.9
   scratcher: ^2.3.0
   flutter_svg: ^1.1.6
-
+  rive: ^0.10.0
+  diamond_node_slider: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -69,6 +70,7 @@ flutter:
     - assets/img/Main/
     - assets/img/scratch/
     - assets/img/day_mode/
+    - assets/img/Login_character/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
