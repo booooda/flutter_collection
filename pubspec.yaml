@@ -71,6 +71,7 @@ flutter:
     - assets/img/scratch/
     - assets/img/day_mode/
     - assets/img/Login_character/
+    - assets/img/mario/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

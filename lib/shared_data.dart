@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
+import 'package:flutter_collection/mario/mario.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
 import 'package:flutter_collection/smile/smile.dart';
@@ -20,6 +21,12 @@ double height(BuildContext context) {
 }
 
 List<Map<String, dynamic>> cardData = [
+  {
+    'img': 'assets/img/Main/mario.png',
+    'title': 'Super Mario',
+    'color': Color.fromARGB(255, 144, 49, 38),
+    'details': Mario()
+  },
   {
     'img': 'assets/img/Main/character.png',
     'title': 'Login Animation',
