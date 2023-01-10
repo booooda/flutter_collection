@@ -32,3 +32,7 @@ https://user-images.githubusercontent.com/50383579/211278553-a1eeab78-4a14-4023-
 
 https://user-images.githubusercontent.com/50383579/211555629-47d98efb-9756-4cef-ad69-e5d9b6a07908.mp4
 
+## Expanded Card
+
+https://user-images.githubusercontent.com/50383579/211587409-0d289fa2-17f9-46e2-8274-ea7ade6ffc2c.mp4
+
