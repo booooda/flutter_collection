@@ -20,3 +20,11 @@ https://user-images.githubusercontent.com/50383579/211194068-36300aea-e6d1-4c5e-
 
 https://user-images.githubusercontent.com/50383579/211194120-5bc94de5-cbaa-45d1-a3b2-7894df939050.mp4
 
+## Login Character
+
+https://user-images.githubusercontent.com/50383579/211278260-856c427e-16ae-42b6-9cc7-84a6fffd153b.mp4
+
+## emoji rate
+
+https://user-images.githubusercontent.com/50383579/211278553-a1eeab78-4a14-4023-88d1-d80fbfcb1040.mp4
+
