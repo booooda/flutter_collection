@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
+import 'package:flutter_collection/expand%20animation/card.dart';
 import 'package:flutter_collection/mario/mario.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
@@ -62,6 +63,12 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Emoji Rate',
     'color': const Color.fromARGB(255, 244, 221, 132),
     'details': const Smile()
+  },
+  {
+    'img': 'assets/img/Main/expand.png',
+    'title': 'Expanded Card',
+    'color': const Color.fromARGB(255, 255, 114, 43),
+    'details': const CardScreen()
   },
 ];
 
