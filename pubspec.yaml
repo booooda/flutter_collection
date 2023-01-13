@@ -42,6 +42,9 @@ dependencies:
   flutter_svg: ^1.1.6
   rive: ^0.10.0
   diamond_node_slider: ^1.0.0
+  google_mobile_ads: ^2.3.0
+  weather_animation: ^0.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -72,6 +75,9 @@ flutter:
     - assets/img/day_mode/
     - assets/img/Login_character/
     - assets/img/mario/
+    - assets/img/trans/
+    - assets/img/wheel/
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

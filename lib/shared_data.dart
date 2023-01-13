@@ -6,8 +6,11 @@ import 'package:flutter_collection/mario/mario.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
 import 'package:flutter_collection/smile/smile.dart';
+import 'package:flutter_collection/transation_expand.dart/transition.dart';
+import 'package:flutter_collection/wheel_scroll/wheel.dart';
 
 import 'login_animation/login.dart';
+import 'sliver_animation/home.dart';
 
 Color dark = const Color.fromARGB(255, 29, 37, 46);
 const Color grey = Color.fromARGB(255, 56, 59, 62);
@@ -25,8 +28,20 @@ List<Map<String, dynamic>> cardData = [
   {
     'img': 'assets/img/Main/mario.png',
     'title': 'Super Mario',
-    'color': Color.fromARGB(255, 144, 49, 38),
+    'color': const Color.fromARGB(255, 144, 49, 38),
     'details': Mario()
+  },
+  {
+    'img': 'assets/img/Main/movie.png',
+    'title': 'Expanded Menu',
+    'color': const Color.fromARGB(255, 27, 1, 57),
+    'details': TransitionScreen()
+  },
+  {
+    'img': 'assets/img/Main/wheel.png',
+    'title': 'Wheel View',
+    'color': const Color(0xffffcd9f),
+    'details': const WheelScreen()
   },
   {
     'img': 'assets/img/Main/character.png',
@@ -69,6 +84,12 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Expanded Card',
     'color': const Color.fromARGB(255, 255, 114, 43),
     'details': const CardScreen()
+  },
+  {
+    'img': 'assets/img/Main/sliver.png',
+    'title': 'Sliver Animation',
+    'color': const Color.fromARGB(255, 255, 43, 43),
+    'details': const Sliver()
   },
 ];
 

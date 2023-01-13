@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_collection/expand%20animation/card.dart';
 import 'package:flutter_collection/home.dart';
 import 'package:flutter_collection/smart%20switch/provider.dart';
+
 import 'package:provider/provider.dart';
 
 void main() {
