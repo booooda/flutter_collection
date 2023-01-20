@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
+import 'package:flutter_collection/duck/duck.dart';
 import 'package:flutter_collection/expand%20animation/card.dart';
 import 'package:flutter_collection/mario/mario.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
@@ -90,6 +91,12 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Sliver Animation',
     'color': const Color.fromARGB(255, 255, 43, 43),
     'details': const Sliver()
+  },
+  {
+    'img': 'assets/img/Main/duck.png',
+    'title': 'Duck ligths',
+    'color': Colors.green,
+    'details': const Duck()
   },
 ];
 

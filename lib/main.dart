@@ -4,6 +4,8 @@ import 'package:flutter_collection/smart%20switch/provider.dart';
 
 import 'package:provider/provider.dart';
 
+import 'duck/duck.dart';
+
 void main() {
   runApp(MultiProvider(
     providers: [
