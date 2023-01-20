@@ -36,3 +36,13 @@ https://user-images.githubusercontent.com/50383579/211555629-47d98efb-9756-4cef-
 
 https://user-images.githubusercontent.com/50383579/211587409-0d289fa2-17f9-46e2-8274-ea7ade6ffc2c.mp4
 
+## Expand Details
+
+https://user-images.githubusercontent.com/50383579/212273827-d2b4dd28-63a8-43aa-a2fa-edc2a05727f6.mp4
+
+## Wheel Scroll
+
+https://user-images.githubusercontent.com/50383579/212273936-a5f69c2e-b339-4637-9d99-3770eb4941f3.mp4
+
+
+
