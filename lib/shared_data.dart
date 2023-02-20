@@ -3,7 +3,9 @@ import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
 import 'package:flutter_collection/duck/duck.dart';
 import 'package:flutter_collection/expand%20animation/card.dart';
+import 'package:flutter_collection/eye/cat_track.dart';
 import 'package:flutter_collection/mario/mario.dart';
+import 'package:flutter_collection/pepsi/drinks_bottles.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
 import 'package:flutter_collection/smile/smile.dart';
@@ -97,6 +99,18 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Duck ligths',
     'color': Colors.green,
     'details': const Duck()
+  },
+  {
+    'img': 'assets/img/Main/cat.png',
+    'title': 'Cat Tracking',
+    'color': Colors.yellow[900],
+    'details': const CatTrack()
+  },
+  {
+    'img': 'assets/img/Main/bottles.png',
+    'title': 'Drink Bottles',
+    'color': const Color.fromARGB(255, 23, 60, 245),
+    'details': const DrinksBottles()
   },
 ];
 

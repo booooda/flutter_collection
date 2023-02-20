@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/home.dart';
+import 'package:flutter_collection/pepsi/drinks_bottles.dart';
 import 'package:flutter_collection/smart%20switch/provider.dart';
 import 'package:provider/provider.dart';
-import 'duck/duck.dart';
 
 void main() {
   runApp(MultiProvider(
