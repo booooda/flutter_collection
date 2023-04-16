@@ -87,7 +87,7 @@ class _LoginState extends State<Login> {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 255, 100, 198),
+                          color: const Color.fromARGB(255, 255, 100, 198),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         padding: const EdgeInsets.symmetric(
@@ -105,7 +105,7 @@ class _LoginState extends State<Login> {
                       const SizedBox(height: 10),
                       Container(
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 255, 95, 196),
+                          color: const Color.fromARGB(255, 255, 95, 196),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         padding: const EdgeInsets.symmetric(

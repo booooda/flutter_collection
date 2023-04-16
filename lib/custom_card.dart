@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_collection/details.dart';
 import 'package:flutter_collection/shared_data.dart';
 import 'package:flutter_collection/widgets/card_img.dart';
 
@@ -14,10 +13,8 @@ class CustomCard extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: GestureDetector(
         onTap: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: ((context) => Details(project: project))));
+          Navigator.push(context,
+              MaterialPageRoute(builder: ((context) => project.details)));
         },
         child: SizedBox(
           height: 210,

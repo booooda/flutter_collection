@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_collection/shared_data.dart';
 
 class Mario extends StatefulWidget {
-  Mario({super.key});
+  const Mario({super.key});
 
   @override
   State<Mario> createState() => _MarioState();
@@ -15,14 +15,6 @@ class _MarioState extends State<Mario> {
   late Timer timer;
   bool isLongPressed = false;
   int i = 0;
-
-  void _startOperation() {
-    setState(() {
-      mariox += 0.02;
-    });
-    print('LongPress Event');
-    isLongPressed = true;
-  }
 
   static double mariox = 0;
   static double marioy = 1;
@@ -169,12 +161,10 @@ class _MarioState extends State<Mario> {
                               });
                             },
                             onLongPressEnd: (detail) {
-                              if (timer != null) {
-                                setState(() {
-                                  run = false;
-                                });
-                                timer.cancel();
-                              }
+                              setState(() {
+                                run = false;
+                              });
+                              timer.cancel();
                             },
                             child: const Icon(Icons.arrow_back)),
                       ),
@@ -203,12 +193,10 @@ class _MarioState extends State<Mario> {
                               });
                             },
                             onLongPressEnd: (detail) {
-                              if (timer != null) {
-                                setState(() {
-                                  run = false;
-                                });
-                                timer.cancel();
-                              }
+                              setState(() {
+                                run = false;
+                              });
+                              timer.cancel();
                             },
                             child: const Icon(Icons.arrow_forward)),
                       ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
+import 'package:flutter_collection/bike/bike.dart';
+import 'package:flutter_collection/burger/burger.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
 import 'package:flutter_collection/duck/duck.dart';
 import 'package:flutter_collection/expand%20animation/card.dart';
@@ -7,6 +9,7 @@ import 'package:flutter_collection/eye/cat_track.dart';
 import 'package:flutter_collection/mario/mario.dart';
 import 'package:flutter_collection/pepsi/drinks_bottles.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
+import 'package:flutter_collection/slide_card/slide.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
 import 'package:flutter_collection/smile/smile.dart';
 import 'package:flutter_collection/transation_expand.dart/transition.dart';
@@ -32,13 +35,13 @@ List<Map<String, dynamic>> cardData = [
     'img': 'assets/img/Main/mario.png',
     'title': 'Super Mario',
     'color': const Color.fromARGB(255, 144, 49, 38),
-    'details': Mario()
+    'details': const Mario()
   },
   {
     'img': 'assets/img/Main/movie.png',
     'title': 'Expanded Menu',
     'color': const Color.fromARGB(255, 27, 1, 57),
-    'details': TransitionScreen()
+    'details': const TransitionScreen()
   },
   {
     'img': 'assets/img/Main/wheel.png',
@@ -111,6 +114,24 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Drink Bottles',
     'color': const Color.fromARGB(255, 23, 60, 245),
     'details': const DrinksBottles()
+  },
+  {
+    'img': 'assets/img/Main/slideCard.png',
+    'title': 'Drink Bottles',
+    'color': const Color.fromARGB(255, 55, 165, 0),
+    'details': const Slide()
+  },
+  {
+    'img': 'assets/img/Main/bike.png',
+    'title': 'Drink Bottles',
+    'color': const Color.fromARGB(255, 237, 189, 112),
+    'details': const Bike()
+  },
+  {
+    'img': 'assets/img/Main/burger.png',
+    'title': 'Burger Bottles',
+    'color': const Color.fromARGB(255, 126, 69, 0),
+    'details': const Burger()
   },
 ];
 

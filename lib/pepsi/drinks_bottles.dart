@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/pepsi/bottle_card.dart';
 import 'package:flutter_collection/shared_data.dart';

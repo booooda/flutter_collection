@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_collection/shared_data.dart';
 
 class TransitionScreen extends StatefulWidget {
-  TransitionScreen({super.key});
+  const TransitionScreen({super.key});
 
   @override
   State<TransitionScreen> createState() => _TransitionScreenState();
@@ -88,8 +88,8 @@ class _TransitionScreenState extends State<TransitionScreen> {
                     AnimatedContainer(
                       duration: const Duration(milliseconds: 500),
                       child: Column(
-                        children: [
-                          const Padding(
+                        children: const [
+                          Padding(
                             padding: EdgeInsets.symmetric(vertical: 20),
                             child: Text(
                                 style: TextStyle(fontWeight: FontWeight.bold),

@@ -20,7 +20,7 @@ class _CardScreenState extends State<CardScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            backgroundColor: Color.fromARGB(255, 255, 114, 43),
+            backgroundColor: const Color.fromARGB(255, 255, 114, 43),
             body: SizedBox(
               width: width(context),
               child: SingleChildScrollView(

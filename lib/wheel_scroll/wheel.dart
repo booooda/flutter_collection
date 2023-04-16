@@ -17,7 +17,7 @@ class _WheelScreenState extends State<WheelScreen> {
     return Scaffold(
       backgroundColor: const Color(0xffffcd9f),
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
             height: height(context),
             width: width(context),
             child: Column(children: [
@@ -135,7 +135,7 @@ class _WheelScreenState extends State<WheelScreen> {
                         ),
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       width: width(context) * .5,
                       height: height(context) * .5,
                       child: ListWheelScrollView(

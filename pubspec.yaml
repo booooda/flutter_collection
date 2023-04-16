@@ -44,6 +44,10 @@ dependencies:
   diamond_node_slider: ^1.0.0
   google_mobile_ads: ^2.3.0
   weather_animation: ^0.0.2
+  flutter_slidable: ^2.0.0
+  flutter_launcher_name: ^0.0.1
+  url_launcher: ^6.1.9
+
 
 dev_dependencies:
   flutter_test:
@@ -58,7 +62,8 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_launcher_name:
+  name: "Flutter Collections"
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -80,6 +85,8 @@ flutter:
     - assets/img/duck/
     - assets/img/rive/
     - assets/img/pepsi/
+    - assets/img/bike/
+    - assets/img/burger/
 
 
 

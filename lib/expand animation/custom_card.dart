@@ -23,7 +23,6 @@ class _CustomCardState extends State<CustomCard> {
   bool expanded = false;
   double padding = 30;
   double btnpos = 25;
-  @override
   void expand() {
     if (expanded) {
       setState(() {
@@ -44,13 +43,14 @@ class _CustomCardState extends State<CustomCard> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => expand(),
       child: Stack(
         children: [
           AnimatedContainer(
-            duration: Duration(milliseconds: 250),
+            duration: const Duration(milliseconds: 250),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
@@ -65,7 +65,7 @@ class _CustomCardState extends State<CustomCard> {
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: padding),
             child: Text(
               widget.title,
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
           ),
           Positioned(
@@ -74,7 +74,7 @@ class _CustomCardState extends State<CustomCard> {
               clipper: ContainerClipper(),
               child: AnimatedContainer(
                 curve: Curves.linear,
-                duration: Duration(milliseconds: 250),
+                duration: const Duration(milliseconds: 250),
                 width: 300,
                 height: cardHeight,
                 child: Image.asset(widget.img, fit: BoxFit.cover),

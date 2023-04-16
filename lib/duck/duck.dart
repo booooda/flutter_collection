@@ -25,7 +25,6 @@ class _DuckState extends State<Duck> {
   StateMachineController? controller;
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     const oneSec = Duration(milliseconds: 500);
     Timer.periodic(oneSec, (Timer t) {
