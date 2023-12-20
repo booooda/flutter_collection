@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/home.dart';
 import 'package:flutter_collection/smart%20switch/provider.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
+  //MobileAds.instance.initialize();
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (context) => HomeModel()),

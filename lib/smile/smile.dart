@@ -68,9 +68,7 @@ class _SmileState extends State<Smile> {
                   }),
                 )),
             DiamondNodeSlisder(
-              (value) {
-                score!.change(value.toDouble());
-              },
+              
               activeTrackColor: const Color.fromARGB(255, 255, 118, 64),
               unActiveTrackColor: const Color(0xFFEBEBEB),
               width: 200,
@@ -78,7 +76,9 @@ class _SmileState extends State<Smile> {
               divisions: 1,
               maxValue: 10,
               minValue: 0,
-              textUnitStr: '',
+              textUnitStr: '', valueChanged: (int val , double value ) { 
+                 score!.change(value.toDouble());
+               },
             ),
           ],
         ),

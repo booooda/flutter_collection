@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_collection/shared_data.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'custom_card.dart';
 
@@ -12,25 +11,25 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final BannerAd myBanner = BannerAd(
-    adUnitId: 'ca-app-pub-8426797145803818/6228101070',
-    size: AdSize.banner,
-    request: const AdRequest(),
-    listener: BannerAdListener(
-      // Called when an ad is successfully received.
+  // final BannerAd myBanner = BannerAd(
+  //   adUnitId: 'ca-app-pub-8426797145803818/6228101070',
+  //   size: AdSize.banner,
+  //   request: const AdRequest(),
+  //   listener: BannerAdListener(
+  //     // Called when an ad is successfully received.
 
-      // Called when an ad request failed.
-      onAdFailedToLoad: (Ad ad, LoadAdError error) {
-        // Dispose the ad here to free resources.
-        ad.dispose();
-        // print('Ad failed to load: $error');
-      },
-    ),
-  );
+  //     // Called when an ad request failed.
+  //     onAdFailedToLoad: (Ad ad, LoadAdError error) {
+  //       // Dispose the ad here to free resources.
+  //       ad.dispose();
+  //       // print('Ad failed to load: $error');
+  //     },
+  //   ),
+  // );
   @override
   void initState() {
     super.initState();
-    myBanner.load();
+    //myBanner.load();
   }
 
   @override
@@ -113,11 +112,11 @@ class _HomeState extends State<Home> {
                           color: Color.fromARGB(255, 79, 208, 234))),
                 ),
                 const SizedBox(height: 20),
-                SizedBox(
-                  height: 60,
-                  width: 320,
-                  child: AdWidget(ad: myBanner),
-                ),
+                // SizedBox(
+                //   height: 60,
+                //   width: 320,
+                //   child: AdWidget(ad: myBanner),
+                // ),
                 Wrap(
                   crossAxisAlignment: WrapCrossAlignment.center,
                   alignment: WrapAlignment.center,
