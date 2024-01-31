@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_collection/auto%20scroll/auto_scroll.dart';
 import 'package:flutter_collection/bike/bike.dart';
 import 'package:flutter_collection/burger/burger.dart';
+import 'package:flutter_collection/category_transition/category_transition.dart';
 import 'package:flutter_collection/day_mode.dart/day_mode.dart';
 import 'package:flutter_collection/duck/duck.dart';
 import 'package:flutter_collection/expand%20animation/card.dart';
 import 'package:flutter_collection/eye/cat_track.dart';
 import 'package:flutter_collection/mario/mario.dart';
 import 'package:flutter_collection/pepsi/drinks_bottles.dart';
+import 'package:flutter_collection/pizza%20ingredients/pizze_ing.dart';
+import 'package:flutter_collection/record%20animation/record_animation.dart';
 import 'package:flutter_collection/scratch/scratch.dart';
+import 'package:flutter_collection/shop_sliders/shop_slider.dart';
 import 'package:flutter_collection/slide_card/slide.dart';
 import 'package:flutter_collection/smart%20switch/smart_switch.dart';
 import 'package:flutter_collection/smile/smile.dart';
@@ -132,6 +136,24 @@ List<Map<String, dynamic>> cardData = [
     'title': 'Burger Bottles',
     'color': const Color.fromARGB(255, 126, 69, 0),
     'details': const Burger()
+  },
+  {
+    'img': 'assets/img/Main/clothes_climp.png',
+    'title': 'Clothes Slider',
+    'color': const Color.fromARGB(255, 189, 176, 114),
+    'details': const ShopSlider()
+  },
+  {
+    'img': 'assets/img/Main/pizza.png',
+    'title': 'Pizza Ingrediants',
+    'color': const Color.fromARGB(255, 255, 255, 255),
+    'details': const PizzaIngredients()
+  },
+  {
+    'img': 'assets/img/Main/record.png',
+    'title': 'Record Animation',
+    'color': const Color.fromARGB(255, 7, 124, 193),
+    'details': const RecordAnimation()
   },
 ];
 
